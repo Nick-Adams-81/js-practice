@@ -14,3 +14,12 @@ for(let i = 1; i < 50; i++) {
         console.log(i)
     }
 }
+
+// isPalindrome
+
+const isPalindrome = (string) => {
+    const reverseString = string.split("").reverse().join("");
+    return string === reverseString;
+}
+
+console.log(isPalindrome("racrcars"));
