@@ -1,7 +1,7 @@
 "use strict";
 
 
-//Fizz-buzz
+// Fizz-buzz //
 
 for(let i = 1; i < 50; i++) {
     if(i % 15 === 0) {
@@ -15,7 +15,7 @@ for(let i = 1; i < 50; i++) {
     }
 }
 
-// isPalindrome
+// isPalindrome //
 
 const isPalindrome = (string) => {
     const reverseString = string.split("").reverse().join("");
@@ -23,3 +23,22 @@ const isPalindrome = (string) => {
 }
 
 console.log(isPalindrome("racrcars"));
+
+
+// Fibonachi sequence //
+
+function fibonachi(num) {
+    let a = 0;
+    let b = 1;
+    for(let i = 0; i < num; i++) {
+        let x = a;
+        a = b;
+        b = b + x;
+    }
+
+    return a;
+}
+
+for(let i = 0; i < 10; i++) {
+    console.log(fibonachi(i));
+}
