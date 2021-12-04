@@ -15,6 +15,13 @@ for(let i = 1; i < 50; i++) {
     }
 }
 
+// Reverse a string //
+const reverseString = (string) => {
+    return string.split("").reverse().join("");
+}
+
+console.log(reverseString("hello"));
+
 // isPalindrome //
 const isPalindrome = (string) => {
     const reverseString = string.split("").reverse().join("");
