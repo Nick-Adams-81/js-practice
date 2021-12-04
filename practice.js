@@ -2,7 +2,6 @@
 
 
 // Fizz-buzz //
-
 for(let i = 1; i < 50; i++) {
     if(i % 15 === 0) {
         console.log("fizz-buzz!");
@@ -15,12 +14,14 @@ for(let i = 1; i < 50; i++) {
     }
 }
 
+
 // Reverse a string //
 const reverseString = (string) => {
     return string.split("").reverse().join("");
 }
 
 console.log(reverseString("hello"));
+
 
 // isPalindrome //
 const isPalindrome = (string) => {
@@ -32,7 +33,7 @@ console.log(isPalindrome("racrcars"));
 
 
 // Fibonachi sequence //
-function fibonachi(num) {
+const fibonachi = (num) => {
     let a = 0;
     let b = 1;
     for(let i = 0; i < num; i++) {
@@ -48,10 +49,19 @@ for(let i = 0; i < 10; i++) {
     console.log(fibonachi(i));
 }
 
+
 // Remove vowels from a string //
- 
-function removeVowels(string) {
+const removeVowels = (string) => {
     return string.replace(/[aeiou]/gi, "");
 }
 
 console.log(removeVowels("hello cruel world!"));
+
+// Print second to last word in a string //
+const nextToLastWord = (string) => {
+    let splitStr = string.split(" ");
+    return splitStr[splitStr.length - 2];
+
+}
+
+console.log(nextToLastWord("hello my world"));
