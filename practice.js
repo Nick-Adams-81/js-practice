@@ -65,3 +65,12 @@ const nextToLastWord = (string) => {
 }
 
 console.log(nextToLastWord("hello my world"));
+
+
+// Count vowels in a string //
+const countVowels = (string) => {
+    let count = string.match(/[aeiou]/gi).length;
+    return count;
+}
+
+console.log(countVowels("hello cruel world"));
