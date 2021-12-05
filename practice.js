@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 
 // Fizz-buzz //
@@ -74,3 +74,16 @@ const countVowels = (string) => {
 }
 
 console.log(countVowels("hello cruel world"));
+
+
+// Convert a string to Camel Case //
+const camelCase = (string) => {
+    return string.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+
+}
+
+console.log(camelCase("hello this awesome world"));
+
+
+
+
