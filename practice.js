@@ -49,6 +49,12 @@ for(let i = 0; i < 10; i++) {
     console.log(fibonachi(i));
 }
 
+// count a strings length //
+const stringLength = (string) => {
+    return string.length;
+}
+
+console.log(stringLength("hello world"));
 
 // Remove vowels from a string //
 const removeVowels = (string) => {
@@ -65,6 +71,8 @@ const nextToLastWord = (string) => {
 }
 
 console.log(nextToLastWord("hello my world"));
+
+
 
 
 // Count vowels in a string //
